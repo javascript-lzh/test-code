@@ -4,12 +4,13 @@
   "private": true,
   "scripts": {
     "s": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "b": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "vue-cli-configjs": "^2.0.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.4.0",
@@ -17,12 +18,14 @@
     "@vue/cli-service": "~4.4.0",
     "@vue/eslint-config-standard": "^5.1.2",
     "babel-eslint": "^10.1.0",
+    "compression-webpack-plugin": "^4.0.0",
     "eslint": "^6.7.2",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^6.2.2",
+    "image-webpack-loader": "^6.0.0",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
@@ -42,6 +45,10 @@
   "browserslist": [
     "> 1%",
     "last 2 versions",
-    "not dead"
+    "not dead",
+    "not ie <= 8",
+    "IOS >= 8",
+    "Firefox >= 20",
+    "Android > 4.4"
   ]
 }
